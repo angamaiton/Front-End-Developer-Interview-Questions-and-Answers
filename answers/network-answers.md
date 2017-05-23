@@ -10,8 +10,7 @@ cache, and use more things at once.
 #### Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
 
 When I type a website's URL into my browser, it asks a local DNS server the IP
-address of the URL I give it. We know the local DNS server's IP address because
-of the (DHCP)[https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol].
+address of the URL I give it. We know the local DNS server's IP address from the (DHCP)[https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol].
 
 The server fetches my IP by three-way handshake, and my browser tries to
 establish a TCP/UDP connection. If successful, my browser forms an HTTP request
