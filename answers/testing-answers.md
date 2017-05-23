@@ -2,14 +2,14 @@
 
 #### What are some advantages/disadvantages to testing your code?
 
-###### Advantages
+##### Advantages
 
 - Tests can be used as specs/requirements
 - Testing provides an easy way to ensure that there are no missing pieces that
   aren't working when code is refactored
 - Tests can be shared across a team
 
-###### Disadvantages: there are rarely disadvantages
+##### Disadvantages (there really are none, in the long run)
 
 - It can take more time at the outset to prototype.
 - If you have the wrong boss, he may yell at you or fire you if you keep telling
