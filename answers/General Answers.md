@@ -45,16 +45,19 @@
 * What is Flash of Unstyled Content? How do you avoid FOUC?
 
 	FOUC is when a webpage's content loads before its styles (fonts, colors, etc.) are fully loaded.
+  
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
 
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
 
 	Pros:
-	* CSS animations are great for small tasks that don't require direct state management – making a tooltip, toggling a navbar, displaying an animation when hovering over a <div>, etc.
+	* CSS animations are great for small tasks that don't require direct state management – making a tooltip, toggling navbars, displaying an animation when hovering over a <div>, etc.
 	* CSS animations are GPU-intensive, not CPU-intensive.
 	Cons:
 	* Not supported in older browsers, which means that developers need to understand Babel
 	* Harder to manage, as CSS doesn't really have logic in the same way JavaScript or other languages do.
+  
 * What does CORS stand for and what issue does it address?
+
 	Cross-origin resource sharing. It's primarily used to solve the issue of concurrent downloads taking longer from a single source and speed up download time.
 
