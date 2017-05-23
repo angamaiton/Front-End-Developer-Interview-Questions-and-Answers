@@ -14,17 +14,26 @@
 
 * Talk about your preferred development environment.
 
-	When I first got into development, I prioritized the beauty of an editor over the actual productivity I got out of it – I wanted to feel ahead of the curve and to amaze more senior developers. When my bootcamp had us work with Sublime, I did Atom. When my coworkers used Notepad + +, I used Visual Studio Code. I had an IDE phase, but nothing ever really seemed to really make much of a meaningful difference in my productivity, and I realized that I was focusing too much on my tools instead of what I was building.
+	When I first got into development, I prioritized the beauty of an editor over the actual productivity I got out of it – I wanted to feel ahead of the curve and to amaze more senior developers. When my bootcamp had us work with Sublime, I did Atom. When my coworkers used Notepad++, I used Visual Studio Code. I had an IDE phase, but nothing ever really seemed to really make much of a meaningful difference in my productivity, and I realized that I was focusing too much on my tools instead of what I was building.
 	I follow quite a few design blogs and established dev shops, and eventually came across an article by Thoughtbot about Vim, the twenty-year-old text editor that they used. I tried Vim and hated it, but I went back a few times and slowly started to get the hang of it. I'm in love with it now, and I get so much more productivity out of it than I did with almost anything else. I learned how to script, how to manage my Git repositories better, and how to be a better overall developer just from the process of learning how to use it.
 * Which version control systems are you familiar with?
 	Mainly Git, but I've also used Mercurial.
 * Can you describe your workflow when you create a web page?
 
 * If you have 5 different stylesheets, how would you best integrate them into the site?
+
 * Can you describe the difference between progressive enhancement and graceful degradation?
 * How would you optimize a website's assets/resources?
+
+A few simple things:
+  * Minify/uglify CSS and JavaScript
+  * Use a CDN
+  * Convert images to CSS sprites
+  * Compress images
+  * Serve images from different domains (CORS)
+  
 * How many resources will a browser download from a given domain at a time?
-  * What are the exceptions?
+* What are the exceptions?
 * Name 3 ways to decrease page load (perceived or actual load time).
 	There are quite a few ways to do this, but here are three of the most important:
 	* Minify your production code with a build tool.
@@ -47,6 +56,8 @@
 	FOUC is when a webpage's content loads before its styles (fonts, colors, etc.) are fully loaded.
   
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
+
+  ARIA and screen readers are used to make websites more accessible for disabled users. In order to make websites more accessible, developers should use semantically meaningful tags when building websites (for newer HTML5 content, for example, we use `section`, `aside`, and `main` to help screen readers understand what to prioritize, or `alt` attributes on `img` tags for blind/visually impaired readers).
 
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
 
