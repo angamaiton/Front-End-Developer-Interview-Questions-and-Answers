@@ -30,7 +30,7 @@
 
 * How would you optimize a website's assets/resources?
 
-  A few simple things:
+  A few examples:
     * Minify/uglify CSS and JavaScript
     * Use a CDN
     * Convert images to CSS sprites
@@ -38,6 +38,8 @@
     * Serve images from different domains (CORS)
   
 * How many resources will a browser download from a given domain at a time?
+
+It depends on the kind of browser – up-to-date Chrome, Firefox, and other major browsers should handle six to eight concurrent downloads, but older browsers will support much fewer. I use http://www.browserscope.org/ if there's a specific number that I need to know immediately.
 
 * What are the exceptions?
 
@@ -58,6 +60,10 @@
 	Elixir (and Phoenix) seem to combine the best of both worlds. It's like a newer, better Rails, and it has a lot of great/interesting conventions (it's easy to test, it comes with Brunch instead of Webpack, etc.)
   
 * Explain the importance of standards and standards bodies.
+
+  In a nutshell, standards are useful because they make it easier for developers to use the same markup across different browsers and be sure that the page works the same way across rendering engines. Standards reduce the need for checking user agents and for writing specialized code to target older/different browsers.
+
+  For an example of what goes wrong when companies don't adopt or comply with standards, see Internet Explorer.
 
 * What is Flash of Unstyled Content? How do you avoid FOUC?
 
