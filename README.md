@@ -1,4 +1,4 @@
-# Front-end Job Interview Questions
+# Front-end Job Interview Questions (and Answers)
 
 This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
 
@@ -6,15 +6,15 @@ This file contains a number of front-end interview questions that can be used wh
 
 ## Table of Contents
 
-  1. [General Questions](#general-questions)
-  1. [HTML Questions](#html-questions)
-  1. [CSS Questions](#css-questions)
-  1. [JS Questions](#js-questions)
-  1. [Testing Questions](#testing-questions)
-  1. [Performance Questions](#performance-questions)
-  1. [Network Questions](#network-questions)
-  1. [Coding Questions](#coding-questions)
-  1. [Fun Questions](#fun-questions)
+  1. **[General Questions](#general-questions)** - *[Answers](answers/general-questions.md)*
+  1. **[HTML Questions](#html-questions)** - *[Answers](answers/html-questions.md)*
+  1. **[CSS Questions](#css-questions)** - *[Answers](answers/css-questions.md)*
+  1. **[JS Questions](#js-questions)** - *[Answers](answers/js-questions.md)*
+  1. **[Testing Questions](#testing-questions)** - *[Answers](answers/testing-questions.md)*
+  1. **[Performance Questions](#performance-questions)** - *[Answers](answers/performance-questions.md)*
+  1. **[Network Questions](#network-questions)** - *[Answers](answers/network-questions.md)*
+  1. **[Coding Questions](#coding-questions)** - *[Answers](answers/coding-questions.md)*
+  1. **[Fun Questions](#fun-questions)** - *[Answers](answers/fun-questions.md)*
 
 ## Getting Involved
 
