@@ -10,8 +10,20 @@
 
 * What is a recent technical challenge you experienced and how did you solve it?
 
+  CODE GOES HERE
+
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 
+  That would depend primarily upon a client's requirements, but here are some general rules I follow:
+  
+  -**UI**: Simplicity and ease of use above all else. Products should behave intuitively and predictably.
+  -**Security**: I prefer using open-source tooling, and security is a metaphorical Prime Directive when it comes to designing and implementing features – it overrides all other concerns, and should be thought of as a feature.
+  -**Performance**: This is heavily dependent upon an application's target demographic, but I'm obsessive when it comes to optimization and making good decisions from the outset – I prefer up-to-date tools, and I like modularity and small files that are easy to debug and improve upon.
+  -**SEO**: For React, I emphasize SSR (server-side rendering), and I pay attention to `meta` tags when I'm designing the application. Being a (reluctant) millennial, I've also worked on ways to optimize social media performance and output.
+  -**Maintainability**: My preferred toolkit revolves primarily around creating maintainable, scalable applications – I try to keep my data immutable, to use tools like Redux for store/state management, and to use statically typed languages like TypeScript or Elm.
+  -**Technologies**: I enjoy using and experimenting with new technologies, but I tailor what I use according to the application I'm making. I prefer well-documented and widely used technologies wherever possible.
+  
+  
 * Talk about your preferred development environment.
 
 	When I first got into development, I prioritized the beauty of an editor over the actual productivity I got out of it – I wanted to feel ahead of the curve and to amaze more senior developers. When my bootcamp had us work with Sublime, I did Atom. When my coworkers used Notepad++, I used Visual Studio Code. I had an IDE phase, but nothing ever really seemed to really make much of a meaningful difference in my productivity, and I realized that I was focusing too much on my tools instead of what I was building.
@@ -24,9 +36,23 @@
   
 * Can you describe your workflow when you create a web page?
 
+  1. Go over the mockups and wireframes (and if there are none, make sure that my idea of what the page should look like matches the official spec) – this gives me a clear picture of what I'm doing and why, and helps with my workflow.
+  2. Decide on my tooling. Depending on the project requirements, I pick different tools (if I'm handing it off later, I pick more easily accessible tools (SASS > PostCSS, React > Vue, Rails > Sinatra, etc.).
+  3. Write out acceptance and functionality tests, and ensure that they fail appropriately.
+  4. Code the site. I start with the largest pieces and work my way down, making each test pass.
+  5. Integrate Travis CI.
+  6. Publish my code and ensure that all tests pass.
+  7. Deploy.
+
 * If you have 5 different stylesheets, how would you best integrate them into the site?
 
+A good way of doing this would be using a preprocessor like SASS to nest and merge them together into a single source, and then minify the output in production.
+
 * Can you describe the difference between progressive enhancement and graceful degradation?
+
+**Progressive enhancement** is a web design strategy where developers implement basic features supported universally and then enhance them according to more advanced requirements on different environments.
+
+**Graceful degradation**, on the other hand, is a strategy where the most advanced features and pieces are implemented, and additional work is done to support environments where features don't work or perform poorly.
 
 * How would you optimize a website's assets/resources?
 
@@ -43,6 +69,8 @@ It depends on the kind of browser – up-to-date Chrome, Firefox, and other maj
 
 * What are the exceptions?
 
+An example would be using subdomains that point at the same parent domain – implementing these helps increase the concurrency level of the download.
+
 * Name 3 ways to decrease page load (perceived or actual load time).
 	There are quite a few ways to do this, but here are three of the most important:
     * Minify your production code with a build tool.
@@ -53,6 +81,8 @@ It depends on the kind of browser – up-to-date Chrome, Firefox, and other maj
 	I would use tabs to match the project's conventions, create an ESLint config to enforce standard styling throughout the project, and create an .editorconfig file at the root of the project to ensure that developers' editors would use those standards automatically.
   
 * Describe how you would create a simple slideshow page.
+
+  CODE GOES HERE
 
 * If you could master one technology this year, what would it be?
 
@@ -78,8 +108,9 @@ It depends on the kind of browser – up-to-date Chrome, Firefox, and other maj
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
 
 	Pros:
-	* CSS animations are great for small tasks that don't require direct state management – making a tooltip, toggling navbars, displaying an animation when hovering over a <div>, etc.
+	* CSS animations are great for small tasks that don't require direct state management – making a tooltip, toggling navbars, displaying an animation when hovering over an element, etc.
 	* CSS animations are GPU-intensive, not CPU-intensive.
+  
 	Cons:
 	* Not supported in older browsers, which means that developers need to understand Babel
 	* Harder to manage, as CSS doesn't really have logic in the same way JavaScript or other languages do.
