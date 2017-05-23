@@ -26,7 +26,7 @@ global object, which inherits from `null`.
 #### What do you think of AMD vs CommonJS?
 
 At this point, I try to avoid both. I prefer CommonJS for ease of use with
-simple client-side rendered applications, but I prefer to use ES6/ES7 modules on
+simple client-side rendered applications, but I prefer to use ES2015 modules on
 both the client and the server. AMD is better on certain points than CommonJS because of its
 asynchronous nature, but ES2015 modules are easier and better than either, in my
 opinion.
