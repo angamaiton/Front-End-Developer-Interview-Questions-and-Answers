@@ -16,13 +16,12 @@
 
   That would depend primarily upon a client's requirements, but here are some general rules I follow:
   
-  -**UI**: Simplicity and ease of use above all else. Products should behave intuitively and predictably.
-  -**Security**: I prefer using open-source tooling, and security is a metaphorical Prime Directive when it comes to designing and implementing features – it overrides all other concerns, and should be thought of as a feature.
-  -**Performance**: This is heavily dependent upon an application's target demographic, but I'm obsessive when it comes to optimization and making good decisions from the outset – I prefer up-to-date tools, and I like modularity and small files that are easy to debug and improve upon.
-  -**SEO**: For React, I emphasize SSR (server-side rendering), and I pay attention to `meta` tags when I'm designing the application. Being a (reluctant) millennial, I've also worked on ways to optimize social media performance and output.
-  -**Maintainability**: My preferred toolkit revolves primarily around creating maintainable, scalable applications – I try to keep my data immutable, to use tools like Redux for store/state management, and to use statically typed languages like TypeScript or Elm.
-  -**Technologies**: I enjoy using and experimenting with new technologies, but I tailor what I use according to the application I'm making. I prefer well-documented and widely used technologies wherever possible.
-  
+  - **UI**: Simplicity and ease of use above all else. Products should behave intuitively and predictably.
+  - **Security**: I prefer using open-source tooling, and security is a metaphorical Prime Directive when it comes to designing and implementing features – it overrides all other concerns, and should be thought of as a feature.
+  - **Performance**: This is heavily dependent upon an application's target demographic, but I'm obsessive when it comes to optimization and making good decisions from the outset – I prefer up-to-date tools, and I like modularity and small files that are easy to debug and improve upon.
+  - **SEO**: For React, I emphasize SSR (server-side rendering), and I pay attention to `meta` tags when I'm designing the application. Being a (reluctant) millennial, I've also worked on ways to optimize social media performance and output.
+  - **Maintainability**: My preferred toolkit revolves primarily around creating maintainable, scalable applications – I try to keep my data immutable, to use tools like Redux for store/state management, and to use statically typed languages like TypeScript or Elm.
+  - **Technologies**: I enjoy using and experimenting with new technologies, but I tailor what I use according to the application I'm making. I prefer well-documented and widely used technologies wherever possible.
   
 * Talk about your preferred development environment.
 
