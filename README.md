@@ -6,15 +6,15 @@ This file contains a number of front-end interview questions that can be used wh
 
 ## Table of Contents
 
-  1. **[General Questions](#general-questions)** - *[Answers](answers/general-questions.md)*
-  1. **[HTML Questions](#html-questions)** - *[Answers](answers/html-questions.md)*
-  1. **[CSS Questions](#css-questions)** - *[Answers](answers/css-questions.md)*
-  1. **[JS Questions](#js-questions)** - *[Answers](answers/js-questions.md)*
-  1. **[Testing Questions](#testing-questions)** - *[Answers](answers/testing-questions.md)*
-  1. **[Performance Questions](#performance-questions)** - *[Answers](answers/performance-questions.md)*
-  1. **[Network Questions](#network-questions)** - *[Answers](answers/network-questions.md)*
-  1. **[Coding Questions](#coding-questions)** - *[Answers](answers/coding-questions.md)*
-  1. **[Fun Questions](#fun-questions)** - *[Answers](answers/fun-questions.md)*
+  1. **[General Questions](#general-questions)** - *[Answers](answers/general-answers.md)*
+  1. **[HTML Questions](#html-questions)** - *[Answers](answers/html-answers.md)*
+  1. **[CSS Questions](#css-questions)** - *[Answers](answers/css-answers.md)*
+  1. **[JS Questions](#js-questions)** - *[Answers](answers/js-answers.md)*
+  1. **[Testing Questions](#testing-questions)** - *[Answers](answers/testing-answers.md)*
+  1. **[Performance Questions](#performance-questions)** - *[Answers](answers/performance-answers.md)*
+  1. **[Network Questions](#network-questions)** - *[Answers](answers/network-answers.md)*
+  1. **[Coding Questions](#coding-questions)** - *[Answers](answers/coding-answers.md)*
+  1. **[Fun Questions](#fun-questions)** - *[Answers](answers/fun-answers.md)*
 
 ## Getting Involved
 
