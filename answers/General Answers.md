@@ -38,7 +38,9 @@
     * Serve images from different domains (CORS)
   
 * How many resources will a browser download from a given domain at a time?
+
 * What are the exceptions?
+
 * Name 3 ways to decrease page load (perceived or actual load time).
 	There are quite a few ways to do this, but here are three of the most important:
     * Minify your production code with a build tool.
@@ -59,7 +61,9 @@
 
 * What is Flash of Unstyled Content? How do you avoid FOUC?
 
-	FOUC is when a webpage's content loads before its styles (fonts, colors, etc.) are fully loaded.
+	FOUC is when a webpage's content loads before its styles are fully loaded and applied. An example would be when style tags are placed after other content or applied asynchronously by JavaScript.
+  
+  In order to avoid FOUC, styles should be placed in order so that they are loaded and applied alongside their matching HTML elements – developers can put styles in the `head`.
   
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
 
