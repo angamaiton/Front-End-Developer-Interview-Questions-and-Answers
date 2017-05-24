@@ -2,7 +2,7 @@
 
 #### What is the difference between classes and ID's in CSS?
 
-*Not answered yet*
+IDs are unique, while classes can be reassigned among multiple elements.
 
 #### What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 
@@ -29,12 +29,12 @@ order).
 
 BFC is part of CSS rendering on webpages. It's used to determine how positioning
 and clearing should be done. Context is created by a root element, floats,
-inline-blocks, absolutely positioned elements, and/or tables.
+inline blocks, absolutely positioned elements, and/or tables.
 
 #### What are the various clearing techniques and which is appropriate for what context?
 
 ```css
-clear:both;
+clear: both;
 ```
 
 ```css
@@ -51,19 +51,30 @@ used to render each piece appropriately given its context (examples being
 
 #### What are your favourite image replacement techniques and which do you use when?
 
-*Not answered yet*
+I usually prefer Scott Kellum or Langridge -- Langridge when performance is
+critical, and Scott Kellum for simpler projects.
 
 #### How would you approach fixing browser-specific styling issues?
 
-*Not answered yet*
+I like using Autoprefixer and PostCSS plugins to solve most browser
+compatibility issues, but for special issues, I use custom stylesheets for
+finnicky browsers.
 
 #### How do you serve your pages for feature-constrained browsers?
 
-*Not answered yet*
+Polyfills and graceful degradation.
 
 ###### What techniques/processes do you use?
 
-*Not answered yet*
+- Build tools:
+  * Webpack
+  * Brunch
+- Preprocessor/Postprocessors:
+  * SASS/SCSS
+  * PostCSS
+- Styling:
+  * BEM
+  * CSS Modules
 
 #### What are the different ways to visually hide content (and make it available only for screen readers)?
 
@@ -106,7 +117,7 @@ Usually about CSS selectors.
 #### How would you implement a web design comp that uses non-standard fonts?
 
 - `@font-face` to write my own `font-family`
-- `@import` to import prepared web font(e.g. Google Webfonts)
+- `@import` to import prepared web font (e.g. Google Webfonts)
 
 #### Explain how a browser determines what elements match a CSS selector.
 
@@ -123,25 +134,53 @@ first character of a line, etc.
 
 #### Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
 
-*Not answered yet*
+All HTML elements are boxes, and have specific CSS properties (padding, margins,
+borders, and content). Browsers differ on what can specifically be measured as
+content. The two main box models are content boxes and border boxes -- I prefer
+to solve the issue simply by using border-box for everything (see below).
 
 #### What does ```* { box-sizing: border-box; }``` do? What are its advantages?
 
-*Not answered yet*
+It tells the browser to size content according to the border-box as opposed to
+the content-box, which helps solve issues with unexpected padding differences
+when positioning elements.
 
 #### List as many values for the display property that you can remember.
 
-*Not answered yet*
+* none
+* block
+* inline
+* inline-block
+* table
+* table-cell
+* flex
+* static
+* inherit
 
 #### What's the difference between inline and inline-block?
 
-*Not answered yet*
+Inline elements aren't block elements, which means that elements still are
+allowed to be positioned to their right and left. They also can't have their
+height or width set. Inline-block elements, on the other hand, respect
+positioning, height, and width.
+
+[https://stackoverflow.com/questions/9189810/css-display-inline-vs-inline-block]
 
 #### What's the difference between a relative, fixed, absolute and statically positioned element?
 
-*Not answered yet*
+Elements are rendered *statically* by default. Relative elements function
+similarly to static elements, but allow custom positioning from their starting
+points. Absolute elements are removed from the normal flow of the document, and
+can be manually positioned within the context of a parent. Fixed elements
+function similarly to absolute elements, but move with the screen.
 
 #### The 'C' in CSS stands for Cascading.  How is priority determined in assigning styles (a few examples)?  How can you use this system to your advantage?
+
+Priority is determined from the local level up -- inline styles take precedence
+over `<style>` tags, which take precedence over stylesheets. This allows
+developers to override things at a local level without changing styles globally.
+If CSS modules are used, this helps keep things separated even further and
+reduces the risk of styles overriding one another unintentionally.
 
 #### What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
 
@@ -153,9 +192,12 @@ Grid, and tailor styles to my needs.
 
 #### Have you played around with the new CSS Flexbox or Grid specs?
 
-Yes.
+Yes. I use them all the time.
 
 #### How is responsive design different from adaptive design?
+
+Responsive design is essentially a single layout adapted to different form
+factors, while adaptive design uses multiple (separate) layouts.
 
 #### Have you ever worked with retina graphics? If so, when and what techniques did you use?
 
@@ -165,5 +207,10 @@ Yes.
 }
 ```
 
+I use Sketch and GravitDesigner for most of my retina graphics.
+
 #### Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
 
+`translate()` doesn't require the browser to repaint, which helps with
+performance. I almost exclusively prefer it to absolute positioning, unless I'm
+using the latter for an initial location and translating it from there.
